@@ -1,14 +1,5 @@
 <html>
 <head> 
-<script>
-function changecolor(color) { 
-var x = document.createElement(&quot;input&quot;);
-x.setAttribute(&quot;id&quot;,&quot;val&quot;);
-x.style.setProperty(&quot;background-color&quot;, color, &quot;important&quot;);
-x.setAttribute(&quot;value&quot;,color);       
-document.body.appendChild(x);
-}
-</script>
 <style>
 #val{
 color:white;
@@ -54,5 +45,14 @@ margin:auto;
    <p>Pick your Custom Colour</p>
    <input type="color" id="colorpicker" value="#0000ff" onchange="changecolor(this.value)" >
 </div>
+<script>
+function changecolor(color) { 
+var x = document.createElement(&quot;input&quot;);
+x.setAttribute(&quot;id&quot;,&quot;val&quot;);
+x.style.setProperty(&quot;background-color&quot;, color, &quot;important&quot;);
+x.setAttribute(&quot;value&quot;,color);       
+document.body.appendChild(x);
+}
+</script>
 </body>
 </html>
